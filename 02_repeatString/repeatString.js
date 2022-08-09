@@ -1,18 +1,12 @@
 
- const repeatString = function(str, times) {
-    
-    let i;
-    for(i = 0; i < numberOfTimes - 1; i++) {
-        repeatedString += str;
-    }
-
-    return repeatedString;
+ const repeatString = function(word, times) {
+  if (times < 0) return 'ERROR';
+  let string = '';
+  for (let i = 0; i < times; i++) {
+    string += word;
+  }
+  return string;
 };
-
-let repeatedString = 'hey';
-let numberOfTimes = 3;
-
-console.log(repeatString(repeatedString, numberOfTimes));
 
 
 // Do not edit below this line
